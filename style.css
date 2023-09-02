@@ -156,7 +156,7 @@ body {
 }
 
 #hero{
-  background-image: url("8.avif");
+  background-image: url("images/8.avif");
   display: flex;
   padding: 0px 80px;
   height:90vh;
@@ -342,7 +342,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("20.jpg");
+  background-image: url("images/20.jpg");
   width: 100%;
   height:40vh;
   background-size:cover;
@@ -384,7 +384,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  background-image: url("22.jpg");
+  background-image: url("images/22.jpg");
   min-width: 650px;
   height:50vh;
   background-size:cover;
@@ -397,7 +397,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  background-image: url("21.avif");
+  background-image: url("images/21.avif");
   min-width: 650px;
   height:50vh;
   background-size:cover;
