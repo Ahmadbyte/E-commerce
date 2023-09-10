@@ -100,14 +100,14 @@ body {
     padding: 0px 50px;
     background: rgb(250, 191, 201);
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
-    z-index:999;
+    /* z-index:999; */
     position:sticky;
     top:0;
     left:0;
 
 }
 
-#header .name{
+.name{
     padding-right: 550px;
     padding-top: 12px;
     color: #19c9d5;
@@ -115,7 +115,7 @@ body {
     font-family: italic;
 }
 
-#header .name:hover{
+.name:hover{
     color:#606063;
 }
 
@@ -280,6 +280,7 @@ body {
   justify-content:space-between;
   padding-top:20px;
   flex-wrap:wrap;
+  /* position: sticky; */
 }
 
 #product1 .pro{
@@ -292,7 +293,7 @@ body {
   box-shadow:20px 20px 30px rgba(0,0,0,0.02);
   margin:15px 0;
   transition:0.2s ease;
-  position: relative;
+  /* position: relative; */
 }
 
 #product1 .pro:hover{
@@ -596,6 +597,230 @@ footer .copyright{
   font-weight: 400;
 }
 
+/*--------Shop---------*/
+
+#page-header{
+  background-image: url("images/20.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header p{
+  color: #fff;
+}
+
+#pagination{
+  text-align: center;
+}
+
+#pagination a{
+  text-decoration:none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color:#fff;
+  font-weight: 600;
+}
+
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.opt{
+  cursor: pointer;
+}
+
+
+/* -------Single Product-------- */
+
+#prodetails {
+  display: flex;
+  margin-top: 20px;
+}
+
+#prodetails .single-pro-details{
+  width: 50%;
+  padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+  padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+  font-size: 26px;
+}
+
+#prodetails .single-pro-details select{
+  padding:5px 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input{
+  width:50px;
+  height:47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right:10px;
+}
+
+#prodetails .single-pro-details input:focus{
+  outline: none;
+}
+
+#prodetails .single-pro-details button{
+  background: #088178;
+  color: #fff;
+}
+
+#prodetails .single-pro-details button:hover{
+  background: #19c9d5;
+}
+
+#prodetails .single-pro-details span{
+  line-height: 25px;
+}
+#prodetails .single-pro-image {
+  width:40%;
+  margin-right:50px;
+}
+
+.small-img-group {
+  display:flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor:pointer;
+}
+
+/* -------cart-------- */
+
+#cart{
+  overflow-x: auto;
+}
+
+#cart table{
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart table img{
+  width:70px;
+}
+
+#cart table td:nth-child(1){
+  width:100px;
+  text-align: center;
+}
+
+#cart table td:nth-child(2){
+  width:150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(3){
+  width:250px;
+  text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+  width:150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+  width:70px;
+  padding: 10px 5px 10px 15px;
+}
+
+#cart table thead{
+  border:1px solid #e2e9e1;
+  border-left:none;
+  border-right:none;
+}
+
+#cart table thead td{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+#cart table tbody tr td{
+  padding:15px;
+}
+
+#cart table tbody td{
+  font-size: 13px;
+}
+
+#cart-add{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#coupon{
+  width:50%;
+  margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3{
+  padding-bottom:15px;
+}
+
+#coupon input{
+  padding:10px 20px;
+  outline:none;
+  width:60%;
+  margin-right:10px;
+  border:1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button{
+  padding:12px 20px;
+  background-color: #088178;
+  color:#fff;
+}
+
+#subtotal{
+  width:50%;
+  margin-bottom:30px;
+  border:1px solid #e2e9e1;
+  padding:30px;
+}
+
+#subtotal table{
+  width:100%;
+  border-collapse: collapse;
+  margin-bottom:20px;
+}
+
+#subtotal table td{
+  padding:10px ;
+  border:1px solid #e2e9e1;
+  width: 50%;
+  font-size: 13px;
+}
+
+
+
 /* -------Media-------- */
 
 @media (max-width:799px){
@@ -666,6 +891,7 @@ footer .copyright{
   }
   #product1 .pro-container{
     justify-content: center;
+
   }
   #product1 .pro{
     margin:15px;
@@ -720,6 +946,36 @@ footer .copyright{
   footer .copyright{
     text-align: start;
   }
+
+  /* single product */
+  #prdetails{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #prdetails .single-pro-image{
+    width: 100%;
+    margin-right:0px;
+  }
+
+  #prdetails .single-pro-details{
+    width: 100%;
+  }
+
+  /*--------Cart page--------*/
+
+  #cart-add{
+    flex-direction: column;
+    overflow-x: auto;
+  }
+  #coupon{
+    width:100%;
+  }
+  #subtotal{
+    width:100%;
+    padding: 20px;
+  }
+
 }
 
 
